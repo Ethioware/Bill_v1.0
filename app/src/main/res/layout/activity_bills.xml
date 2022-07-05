@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/billActivity_layout"
+    android:layout_width="match_parent"
+    android:layout_marginTop="23dp"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent"
+    tools:context=".BillsActivity">
+
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/search_bg"
+        android:fontFamily="@font/ubuntu_medium"
+        android:gravity="start|center"
+        android:hint="@string/search_here"
+        android:lines="1"
+        android:paddingStart="60dp"
+        android:paddingEnd="16dp"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="2dp"
+        android:background="@color/gray"
+        android:layout_height="35dp"
+        android:id="@+id/separater"
+        android:layout_toEndOf="@+id/search_draw"
+        android:layout_marginStart="-6dp"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:id="@+id/search_draw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="18dp"
+        android:padding="8dp"
+        android:src="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/transparent"
+        android:padding="8dp"
+        android:src="@drawable/cancel_search" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search_bar" />
+</RelativeLayout>

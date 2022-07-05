@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mini_calculator">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/number_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="350dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/calculator_frame">
+
+            <TextView
+                android:id="@+id/number9"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/_9"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@id/number8"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/number9"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/_8"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@id/number7"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/number8"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/_7"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/number6"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number9"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/_6"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@id/number5"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number8"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/number6"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/_5"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@id/number4"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number8"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/number5"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/_4"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/number3"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number6"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/_3"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/number2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number6"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/number3"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/_2"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <TextView
+                android:id="@+id/number1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number6"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/number2"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/cambria_bold"
+                android:gravity="center"
+                android:text="@string/c_1"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            <ImageView
+                android:id="@+id/history"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number3"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="center"
+                android:padding="5dp"
+                android:src="@drawable/calculator_history"
+                android:text="@string/decimal"
+                android:textColor="@color/button"
+                android:textSize="40sp"
+                android:contentDescription="@string/shows_history_of_results" />
+            <TextView
+                android:id="@+id/number0"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number3"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/history"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/consolab"
+                android:gravity="center"
+                android:text="@string/_0"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+            <TextView
+                android:id="@+id/decimal"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_below="@+id/number3"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toEndOf="@id/number0"
+                android:background="@drawable/button_layout"
+                android:fontFamily="@font/ubuntu_bold"
+                android:gravity="center"
+                android:text="@string/decimal"
+                android:textColor="@color/button"
+                android:textSize="40sp" />
+
+            // remove this text and finish the layout/functionality.
+            // test the layout (doesn't fit in to the emulator).
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

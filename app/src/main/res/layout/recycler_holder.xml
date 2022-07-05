@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bill_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="18dp"
+    android:layout_marginTop="12dp"
+    android:layout_marginEnd="18dp"
+    android:background="@android:color/transparent">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/holder_background"
+        android:fillViewport="true"
+        android:nestedScrollingEnabled="true"
+        android:scrollbarSize="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/ad_bot"
+        app:layout_constraintEnd_toStartOf="@+id/ad_end"
+        app:layout_constraintStart_toStartOf="@+id/ad_start"
+        app:layout_constraintTop_toTopOf="@+id/ad_top">
+
+        <RelativeLayout
+            android:id="@+id/adapter_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/bill_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="center"
+                android:text="Customer name"
+                android:textColor="#80000000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/bill_title"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="30dp"
+                android:background="#33000000"
+                app:layout_constraintTop_toBottomOf="@id/bill_title" />
+
+            <TextView
+                android:id="@+id/item1"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bill_title"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/amount1"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="left"
+                android:textColor="#80000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/amount1"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bill_title"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/price1"
+                android:fontFamily="@font/consolab"
+                android:gravity="left"
+                android:textColor="#80000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/price1"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bill_title"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toStartOf="@+id/product1"
+                android:fontFamily="@font/consolab"
+                android:gravity="center"
+                android:textColor="#80000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/product1"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/bill_title"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/consolab"
+                android:gravity="left"
+                android:textColor="#80000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/item2"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product1"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toStartOf="@+id/amount1"
+                android:fontFamily="@font/ubuntu_medium"
+                android:gravity="left"
+                android:textColor="#80000000"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/amount2"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product1"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:layout_toStartOf="@+id/price1"
+                android:fontFamily="@font/consolab"
+                android:gravity="left"
+                android:textColor="#80000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/price2"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product1"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="30dp"
+                android:layout_toStartOf="@+id/product1"
+                android:fontFamily="@font/consolab"
+                android:gravity="center"
+                android:textColor="#80000000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/product2"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/product1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="20dp"
+                android:fontFamily="@font/consolab"
+                android:gravity="left"
+                android:textColor="#80000000"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/consolab"
+        android:text="1/12/2021"
+        android:textColor="@color/white"
+        android:padding="2.5dp"
+        android:background="@drawable/date"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/ad_bot"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:padding="2.5dp"
+        android:background="@drawable/time"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="-1dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/consolab"
+        android:text="8:27AM"
+        android:textColor="@color/white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/ad_bot"
+        app:layout_constraintEnd_toStartOf="@+id/ad_end" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ad_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="5dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ad_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintGuide_end="5dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ad_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="5dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/ad_bot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintGuide_end="5dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

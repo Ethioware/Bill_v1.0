@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.anteneh.fish.bill">
+
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:name=".Dark"
+        android:icon="@mipmap/main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BILL">
+        <activity
+            android:name=".mini_calculator"
+            android:exported="false" />
+        <activity
+            android:name=".Preference"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Stats"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.BILL"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Update"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".BillsActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.BILL"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MainView"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.BILL"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Settings"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.BILL"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.BILL"
+            android:windowSoftInputMode="stateHidden"
+            tools:ignore="LockedOrientationActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
